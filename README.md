@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HookGenie ✨
 
-## Getting Started
+Transform your scripts into viral hooks with AI magic.
 
-First, run the development server:
+## Features
 
+- **AI-Powered Hook Generation**: Uses Google Gemini to create 3 viral, scroll-stopping hooks
+- **Modern Glassmorphism UI**: Beautiful, minimalist design with purple accents
+- **Copy to Clipboard**: One-click copying of generated hooks
+- **Responsive Design**: Works perfectly on desktop and mobile
+- **Dark Mode Support**: Automatic theme switching
+
+## Setup Instructions
+
+### 1. Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Lucide Icons
+```bash
+npm install lucide-react
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Set up Google Gemini API
+1. Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Add it to `.env.local`:
+```
+GEMINI_API_KEY=your_actual_api_key_here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run Development Server
+```bash
+npm run dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) to see HookGenie in action!
 
-To learn more about Next.js, take a look at the following resources:
+## How It Works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Paste your script** in the large textarea
+2. **Click "✨ Genie It"** to generate viral hooks
+3. **Copy any hook** with a single click
+4. **Use in your content** for maximum engagement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- **Next.js 15** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **shadcn/ui** for components
+- **Google Gemini AI** for hook generation
+- **Lucide React** for icons
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Easily deploy to Vercel:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/hookgenie)
+
+Don't forget to add your `GEMINI_API_KEY` to Vercel environment variables!
+
+---
+
+**Made with ✨ by HookGenie**

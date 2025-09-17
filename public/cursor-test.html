@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        
+        .test-button {
+            background: #7c3aed;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .test-button:hover {
+            background: #6d28d9;
+            transform: scale(1.05);
+        }
+        
+        .force-pointer {
+            cursor: pointer !important;
+        }
+        
+        button:not(:disabled) {
+            cursor: pointer !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cursor Pointer Test</h1>
+    
+    <h2>Test Buttons:</h2>
+    <button class="test-button">Normal Button</button>
+    <button class="test-button force-pointer">Button with Force Pointer</button>
+    <button class="test-button" disabled>Disabled Button</button>
+    
+    <h2>Instructions:</h2>
+    <p>Hover over the buttons above. You should see a pointer cursor for the enabled buttons.</p>
+    <p>If you don't see pointer cursors, there might be a browser cache issue.</p>
+    
+    <button onclick="location.reload()" class="test-button">Refresh Page</button>
+    <button onclick="window.close()" class="test-button">Close Window</button>
+</body>
+</html>
