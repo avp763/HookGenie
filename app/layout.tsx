@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+
+<meta name="google-site-verification" content="27i9wCnRNde9BD7M0E50KzJYri94-Bq7Ar0ba1l2H0k" />
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
