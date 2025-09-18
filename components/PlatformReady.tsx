@@ -6,10 +6,13 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Copy, Check } from "lucide-react"
 import { trimForDuration } from "@/app/actions/genie"
 
+type PlatformType = "YouTube Shorts" | "TikTok" | "Instagram Reels"
+type GoalType = "Go Viral" | "Sell Something" | "Educate" | "Entertain"
+
 interface PlatformReadyProps {
   originalScript: string
-  platform: string
-  goal: string
+  platform: PlatformType
+  goal: GoalType
 }
 
 type DurationType = "7s" | "15s" | "30s" | "60s"
@@ -23,7 +26,7 @@ export function PlatformReady({ originalScript, platform, goal }: PlatformReadyP
 
   const handleTrim = () => {
     startTransition(async () => {
-      const result = await trimForDuration(originalScript, selectedDuration, platform as any, goal as any)
+      const result = await trimForDuration(originalScript, selectedDuration, platform, goal)
       setTrimmedContent(result)
     })
   }
