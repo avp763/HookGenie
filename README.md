@@ -62,4 +62,4 @@ Don't forget to add your `GEMINI_API_KEY` to Vercel environment variables!
 
 ---
 
-**Made with ✨ by HookGenie**
+**Made with ✨ by HookGenie** - v1.0.1
