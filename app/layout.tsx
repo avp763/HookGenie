@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
-
-<meta name="google-site-verification" content="27i9wCnRNde9BD7M0E50KzJYri94-Bq7Ar0ba1l2H0k" />
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +21,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  
   title: "HookGenie - Your 12-Second Script Genie | AI-Powered Hook Generator",
   description: "Transform your scripts into viral hooks instantly. AI-powered content optimization for YouTube Shorts, TikTok, and Instagram Reels. Paste your script, genie does the rest.",
   keywords: "AI script generator, viral hooks, YouTube Shorts, TikTok, Instagram Reels, content creation, script optimization",
@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
+  },
+
+  verification: {
+    google: '27i9wCnRNde9BD7M0E50KzJYri94-Bq7Ar0ba1l2H0k', // Replace with your actual code
   },
   metadataBase: new URL('https://hookgenie.vercel.app'),
   alternates: {
@@ -72,9 +76,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
+  
 };
 
 export default function RootLayout({
